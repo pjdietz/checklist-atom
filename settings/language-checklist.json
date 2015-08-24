@@ -1,0 +1,7 @@
+{
+    ".text.checklist": {
+        "editor": {
+            "commentStart": "# "
+        }
+    }
+}
