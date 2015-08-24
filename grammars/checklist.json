@@ -10,8 +10,54 @@
             "include": "#comment"
         },
         {
+            "comment": "[ ] Open Task",
             "match": "(\\[ \\])(.*?)((//|#|--\\s|\n).*)",
-            "name": "constant.numeric.integer.hexadecimal.python"
+            "name": "support.constant.checklist.task.open",
+            "captures": {
+                "3": {
+                    "name": "comment.line.checklist"
+                }
+            }
+        },
+        {
+            "comment": "[X] Completed Task",
+            "match": "(\\[[Xx]\\])(.*?)((\/\/|#|--\\s|\n).*)",
+            "name": "comment.todo.task.completed",
+            "captures": {
+                "3": {
+                    "name": "comment.line.checklist"
+                }
+            }
+        },
+        {
+            "comment": "[>] Active Task",
+            "match": "(\\[>\\])(.*?)((\/\/|#|--\\s|\n).*)",
+            "name": "entity.name.class",
+            "captures": {
+                "3": {
+                    "name": "comment.line.checklist"
+                }
+            }
+        },
+        {
+            "comment": "[!] Urgent Task",
+            "match": "(\\[!\\])(.*?)((\/\/|#|--\\s|\n).*)",
+            "name": "keyword.todo.task.urgent",
+            "captures": {
+                "3": {
+                    "name": "comment.line.checklist"
+                }
+            }
+        },
+        {
+            "comment": "[-] Deferred Task",
+            "match": "(\\[-\\])(.*?)((\/\/|#|--\\s|\n).*)",
+            "name": "constant.numeric.todo.task.deferred",
+            "captures": {
+                "3": {
+                    "name": "comment.line.checklist"
+                }
+            }
         }
     ],
     "repository": {
