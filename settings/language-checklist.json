@@ -1,7 +1,10 @@
 {
     ".text.checklist": {
         "editor": {
-            "commentStart": "# "
+            "autoIndentOnPaste": false,
+            "commentStart": "// ",
+            "softTabs": true,
+            "tabLength": 4
         }
     }
 }
