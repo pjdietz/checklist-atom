@@ -12,7 +12,7 @@
         {
             "comment": "[ ] Open Task",
             "match": "(\\[ \\])(.*?)((//|#|--\\s|\n).*)",
-            "name": "support.constant.checklist.task.open",
+            "name": "keyword.task.open.checklist",
             "captures": {
                 "3": {
                     "name": "comment.line.checklist"
@@ -22,7 +22,7 @@
         {
             "comment": "[X] Completed Task",
             "match": "(\\[[Xx]\\])(.*?)((\/\/|#|--\\s|\n).*)",
-            "name": "comment.todo.task.completed",
+            "name": "completed.task.checklist",
             "captures": {
                 "3": {
                     "name": "comment.line.checklist"
@@ -32,7 +32,7 @@
         {
             "comment": "[>] Active Task",
             "match": "(\\[>\\])(.*?)((\/\/|#|--\\s|\n).*)",
-            "name": "entity.name.class",
+            "name": "keyword.task.active.checklist",
             "captures": {
                 "3": {
                     "name": "comment.line.checklist"
